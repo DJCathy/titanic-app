@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[18]:
+# In[24]:
 
 
 # import packages
+get_ipython().system('pip install matplotlib')
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -15,7 +16,7 @@ data = pd.read_csv('train.csv')
 st.write(data) 
 
 
-# In[19]:
+# In[25]:
 
 
 # create a figure with three subplots, size should be (15, 5)
@@ -45,7 +46,7 @@ ax[2].set_xlabel('Fare')
 st.pyplot(fig)
 
 
-# In[20]:
+# In[26]:
 
 
 
